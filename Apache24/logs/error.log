@@ -7,3 +7,29 @@ PHP Warning:  PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried:
 [Wed Sep 11 17:12:16.236053 2024] [mpm_winnt:notice] [pid 9108:tid 320] AH00418: Parent: Created child process 17524
 AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::6528:ef9a:fd3e:2f42. Set the 'ServerName' directive globally to suppress this message
 AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::6528:ef9a:fd3e:2f42. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::6528:ef9a:fd3e:2f42. Set the 'ServerName' directive globally to suppress this message
+[Thu Sep 12 13:56:43.637888 2024] [core:warn] [pid 16688:tid 188] AH00098: pid file C:/WebServer/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_ssh2.dll' (tried: C:\\WebServer\\PHP_8.3\\ext\\php_ssh2.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado), C:\\WebServer\\PHP_8.3\\ext\\php_php_ssh2.dll.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: C:\\WebServer\\PHP_8.3\\ext\\php_curl.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado), C:\\WebServer\\PHP_8.3\\ext\\php_php_curl.dll.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Thu Sep 12 13:56:49.440519 2024] [mpm_winnt:notice] [pid 16688:tid 188] AH00455: Apache/2.4.57 (Win64) PHP/8.3.11 configured -- resuming normal operations
+[Thu Sep 12 13:56:49.440519 2024] [mpm_winnt:notice] [pid 16688:tid 188] AH00456: Apache Lounge VS16 Server built: Apr 14 2023 09:42:54
+[Thu Sep 12 13:56:49.440519 2024] [core:notice] [pid 16688:tid 188] AH00094: Command line: 'C:\\WebServer\\Apache24\\bin\\httpd.exe -d C:/WebServer/Apache24'
+[Thu Sep 12 13:56:49.443515 2024] [mpm_winnt:notice] [pid 16688:tid 188] AH00418: Parent: Created child process 6528
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::6528:ef9a:fd3e:2f42. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::6528:ef9a:fd3e:2f42. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_ssh2.dll' (tried: C:\\WebServer\\PHP_8.3\\ext\\php_ssh2.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado), C:\\WebServer\\PHP_8.3\\ext\\php_php_ssh2.dll.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: C:\\WebServer\\PHP_8.3\\ext\\php_curl.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado), C:\\WebServer\\PHP_8.3\\ext\\php_php_curl.dll.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Thu Sep 12 13:56:49.627062 2024] [mpm_winnt:notice] [pid 6528:tid 380] AH00354: Child: Starting 64 worker threads.
+[Thu Sep 12 15:03:51.153176 2024] [mpm_winnt:notice] [pid 16688:tid 188] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Sep 12 15:03:53.177689 2024] [mpm_winnt:notice] [pid 6528:tid 380] AH00364: Child: All worker threads have exited.
+[Thu Sep 12 15:03:53.227388 2024] [mpm_winnt:notice] [pid 16688:tid 188] AH00430: Parent: Child process 6528 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::6528:ef9a:fd3e:2f42. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_ssh2.dll' (tried: C:\\WebServer\\PHP_8.3\\ext\\php_ssh2.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado), C:\\WebServer\\PHP_8.3\\ext\\php_php_ssh2.dll.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  Module "pdo_pgsql" is already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: C:\\WebServer\\PHP_8.3\\ext\\php_curl.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado), C:\\WebServer\\PHP_8.3\\ext\\php_php_curl.dll.dll (N\xc3\xa3o foi poss\xc3\xadvel encontrar o m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Thu Sep 12 15:03:53.920114 2024] [mpm_winnt:notice] [pid 13316:tid 356] AH00455: Apache/2.4.57 (Win64) PHP/8.3.11 configured -- resuming normal operations
+[Thu Sep 12 15:03:53.920114 2024] [mpm_winnt:notice] [pid 13316:tid 356] AH00456: Apache Lounge VS16 Server built: Apr 14 2023 09:42:54
+[Thu Sep 12 15:03:53.920114 2024] [core:notice] [pid 13316:tid 356] AH00094: Command line: 'C:\\WebServer\\Apache24\\bin\\httpd.exe -d C:/WebServer/Apache24'
+[Thu Sep 12 15:03:53.922114 2024] [mpm_winnt:notice] [pid 13316:tid 356] AH00418: Parent: Created child process 8112
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::6528:ef9a:fd3e:2f42. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::6528:ef9a:fd3e:2f42. Set the 'ServerName' directive globally to suppress this message
