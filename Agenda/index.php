@@ -2,6 +2,20 @@
    session_start();
 //session_name('Login');
 
+function logger($log){
+    if(!file_exists('agenda/sys/loggs/log.txt')){
+        file_put_contents('agenda/sys/loggs/log.txt','');
+    }
+
+    $ip = $_SERVER['REMOTE_ADDR'];
+    date_default_timezone_set('America/Sao_Paulo');
+    $time = date('m/d/y h:iA',time());
+
+    $contents = file_get_contents('agenda/sys/loggs/log.txt');
+    $contents .= "$ip\t$time\t$log\r";
+
+    file_put_contents('agenda/sys/loggs/log.txt',$contents);        
+}
 
 ?>
  <html>
@@ -34,6 +48,8 @@
 <?php
     extract($_POST);
     if(isset($_POST["Entrar"])){
+
+        
 
 
         include_once("agenda/sys/classes/conect.php");
@@ -79,20 +95,7 @@
             logger($log);
 
             
-            function logger($log){
-                if(!file_exists('sys/loggs/log.txt')){
-                    file_put_contents('sys/loggs/log.txt','');
-                }
-
-                $ip = $_SERVER['REMOTE_ADDR'];
-                date_default_timezone_set('America/Sao_Paulo');
-                $time = date('m/d/y h:iA',time());
-
-                $contents = file_get_contents('sys/loggs/log.txt');
-                $contents .= "$ip\t$time\t$log\r";
-
-                file_put_contents('sys/loggs/log.txt',$contents);        
-            }
+            
 
 
         }

@@ -33,11 +33,11 @@
         <form method="post" action="perfil.php?var=<?=$var?>" enctype="multipart/form-data">
             <div class="fundo">
                 <div class="fundo1">
-                    <div class="fotoSession">
+                    <span class="fotoSession">
                         <label for="foto" class="fotoLabel">
-                            <img id="perfilView" src="../img_contato/Captura de Tela (1).png">
+                            <img id="perfilView" src="<?=$linhas[0]['img_perfil'];?>">
                         </label>
-                    </div>
+</span>
                     <div class="information">
                         <label for="nome">Nome:</label>
                         <? echo $linhas[0]["nomeusuario"]; ?>
@@ -46,7 +46,7 @@
                         <? echo $linhas[0]["email"]; ?>
                         
                         <label for="bio">Biografia:</label>
-                        <textarea readonly rows="5" ><? echo $linhas[0]["bio"]; ?></textarea>
+                        <textarea readonly rows="5" style="resize:none;"><? echo $linhas[0]["bio"]; ?></textarea>
 
                     </div>
                     <a href="perfilEdit.php?var=<?= $_SESSION["id"]; ?>"><input id="botao" type="button" value="Editar" name="salvar"></a>

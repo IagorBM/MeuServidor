@@ -2,12 +2,27 @@
 session_start();
 //session_name('Login');
 
+    include_once("../classes/conect.php");
+    $obj = new conect();
+    $resultado = $obj->ConectarBanco();
+    $sql = "SELECT * FROM usuario WHERE id_usuario=" . $_SESSION["id"] . ";";
+
+
+    $query = $resultado->prepare($sql);
+    $indice = 0;
+
+    if ($query->execute()) {
+        while ($linha = $query->fetch(PDO::FETCH_ASSOC)) {
+            $linhas2[$indice] = $linha;
+            $indice++;
+        }
+    }
+
 
 if ($_SESSION['Login'] == FALSE) {
     session_destroy();
     header("location: login.php");
 }
-
 
 
 ?>
@@ -253,27 +268,21 @@ if ($_SESSION['Login'] == FALSE) {
                 <div class="conversa">
                     <iframe src="chat.php" class="chat" ></iframe>
                 </div>
-
-                <div class="perfilAgenda">
-
-                </div>
-            
-                <a href="perfil.php?var=<?=  $_SESSION["id"]; ?>">
                     <div class="perfil">
                         <div class="fotoSession">
-                            <label for="foto" class="fotoLabel">
-                                <img id="perfilView" src="../img_contato/Captura de Tela (1).png">
-                            </label>
-                            <label style="right:5%; color:black;">
+                        <span style="right:5%; color:black;" class="perfil_texto">
                                 <?
-                                echo $sql = "SELECT nomeusuario FROM usuario WHERE id_usuario=''";
-                                echo $sql = "SELECT email FROM usuario WHERE id_usuario=''";
+                                echo "<p><b>Nome:</b>".$linhas2[0]['nomeusuario']."</p>";
+                                echo "<p><b>Email:</b>".$linhas2[0]['email']."</p>";
                                 ?>
-                            </label>
+                            </span>
+                            <div for="foto" class="fotoLabel">
+                                <img id="perfilView" src="<?=$linhas2[0]['img_perfil'];?>">
+                            </div>
                         </div>
+                        <a href="perfil.php?var=<?=  $_SESSION["id"]; ?>" class="editarPerfil">Editar</a>
                     </div>
-                </a>
-
+                    
         <script type="text/javascript" src="java.js"></script>
     </body>
 

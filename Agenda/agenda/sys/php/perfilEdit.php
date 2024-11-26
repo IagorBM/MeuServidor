@@ -44,7 +44,7 @@
                 <div class="fundo1">
                     <div class="fotoSession">
                         <label for="foto" class="fotoLabel">
-                            <img id="perfilView" src="<?$linhas[0]['img_perfil'];?>">
+                            <img id="perfilView" src="<?=$linhas[0]['img_perfil'];?>" name="foto1">
                         </label>
                         <input type="file" id="foto" name="foto" accept=".jpg, .jpeg, .png" hidden>
                     </div>
@@ -56,7 +56,7 @@
                         <input type="email" id="email" name="email" placeholder="Digite seu email" value="<?= $linhas[0]['email'];?>">
 
                         <label for="bio">Biografia:</label>
-                        <textarea id="bio" name="bio" placeholder="Fale um pouco sobre você" rows="5" value="<?= $linhas[0]['bio'];?>"></textarea>
+                        <textarea style="resize:none;" id="bio" name="bio" placeholder="Fale um pouco sobre você" rows="5" ><? echo $linhas[0]['bio'];?></textarea>
            
                         <input id="botao" type="submit" value="Salvar perfil" name="salvar">
                     </div>
@@ -78,11 +78,11 @@
         $arquivo_temp = $_FILES['foto']['tmp_name'];
         move_uploaded_file($arquivo_temp, $destino);
 
-        $sql = "UPDATE usuario SET nomeusuario = '" . $_POST["nome"] . "', email = '" . $_POST["email"] . "', bio = '" . $_POST["bio"]."', img_perfil = '". $_POST["foto"]."';";
+        $sql = "UPDATE usuario SET nomeusuario = '" . $_POST["nome"] . "', email = '" . $_POST["email"] . "', bio = '" . $_POST["bio"]."', img_perfil = '". $destino."';";
 
         $query = $resultado->prepare($sql);
         if ($query->execute()) {
-            #header("Location: perfil.php?var=$var");
+            header("Location: perfil.php?var=$var");
         }
         unset($_POST["salvar"]);
     }

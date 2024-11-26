@@ -26,10 +26,7 @@
            
             <input type="submit" value="Cadastro" name="Entrar" class="butao">
             <a href="index.php"><input type="button" value="Logar" name="Logar" class="butao"></a>
-
-
         </div>
-    </form>
 </body>
 </html>
 <?php
