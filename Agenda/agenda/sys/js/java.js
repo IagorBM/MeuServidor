@@ -1,11 +1,11 @@
 function contato() {
-    var div = document.getElementById("tabelaCont");
-    if (div.style.tableLayout == "block")
+    var div = document.getElementsById("tabelaCont");
+    if (div.style.display == "block")
     {
-    div.style.tableLayout = "none";
+    div.style.display = "none";
     }
     else{
-    div.style.tableLayout = "block";
+    div.style.display = "block";
     }
 }
 

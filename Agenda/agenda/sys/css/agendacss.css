@@ -157,6 +157,7 @@ body{
     border: 3px;
     border-radius: 10px;
     border-style: solid;
+    overflow:hidden;
 
     position: absolute;
     top: 20px;
