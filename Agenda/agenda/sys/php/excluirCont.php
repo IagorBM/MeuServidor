@@ -11,5 +11,5 @@
     $query = $resultado->prepare($sql);
     $query->execute();
     
-    header("location: agrenda.php");
+    header("location: agenda.php");
 ?>

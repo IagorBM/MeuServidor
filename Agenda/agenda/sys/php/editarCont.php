@@ -104,7 +104,7 @@ if (isset($_POST["atualizar"])) {
 
     $query = $resultado->prepare($sql);
     if ($query->execute()) {
-        header("location:agrenda.php");
+        header("location:agenda.php");
     }
     unset($_POST["atualizar"]);
 }

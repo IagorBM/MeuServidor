@@ -50,7 +50,7 @@
 
                     </div>
                     <a href="perfilEdit.php?var=<?= $_SESSION["id"]; ?>"><input id="botao" type="button" value="Editar" name="salvar"></a>
-                    <a class="sair" href="agrenda.php"></a>    
+                    <a class="sair" href="agenda.php"></a>    
                 </div>
             </div>
         </form>

@@ -83,7 +83,7 @@ function logger($log){
             $_SESSION["Login"] = TRUE;
             $_SESSION["id"] = $linhas[0]["id_usuario"];
             $_SESSION["nomeUsuario"] = $linhas[0]["no"];;
-            header("location: agenda/sys/php/agrenda.php");
+            header("location: agenda/sys/php/agenda.php");
            
         }
         else{
